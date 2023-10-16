@@ -1,6 +1,6 @@
 # Students Sys:
 
-O Students Sys é um Sistema Web projetado que visa o meio educacional. A Aplicação permite a Gestão de Colaboradores, Professores, Alunos e Salas de aula. A ideia é que os Colaboradores efetuem o cadastro de Alunos e Salas, facilitando a distribuição entre às turmas.
+O Students Sys é um Sistema Web que visa o meio educacional. A Aplicação permite a Gestão de Colaboradores, Professores, Alunos e Salas de aula. A ideia é que os Colaboradores efetuem o cadastro de Alunos e Salas, facilitando a distribuição entre às turmas.
 
 # Techs/Libs/Frameworks:
 
