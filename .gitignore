@@ -1,0 +1,4 @@
+# The names/files entered here will not be sent to the repository
+
+node_modules
+.env
