@@ -49,7 +49,7 @@ A Estrutura está divida seguindo o padrão de arquitetura MVC - `model`, `view`
 
 | Endpoint              | HTTP Method           | Description           |
 | --------------------- | --------------------- | --------------------- |
-| /signin               | POST                  | Get all people        |
+| /signin               | POST                  | Logging in            |
 
 ### Colaborator (Create):
 
