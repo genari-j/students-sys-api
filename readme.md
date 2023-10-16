@@ -57,7 +57,7 @@ A Estrutura está divida seguindo o padrão de arquitetura MVC - `model`, `view`
 | --------------------- | --------------------- | --------------------- |
 | /signup               | POST                  | Create colaborator    |
 
-### Colaborator (Ready - Update - Delete)
+### Colaborator (Ready - Update - Delete):
 
 | Endpoint              | HTTP Method           | Description           |
 | --------------------- | --------------------- | --------------------- |
