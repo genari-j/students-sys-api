@@ -2,15 +2,6 @@ import { RestRepository } from '../rest-repository'
 import { getLimit } from '../../helpers/get-limit'
 
 class Repository extends RestRepository {
-  async disableColaborator (id: number) {
-    const sql = `
-      UPDATE ${this.entity} u
-      SET active = 0
-      WHERE id = ${this.pool.escape(id)}
-    `
-    return this.query(sql)
-  }
-
   async findAllColaborators (filters: any, count: boolean) {
     const sqlCount = 'SELECT COUNT(*) AS total'
     const sqlSelect = `
@@ -32,7 +23,6 @@ class Repository extends RestRepository {
       ca.state AS addressState,
       ca.cep AS addressCep
     `
-
     const sql = `
       ${count ? sqlCount : sqlSelect}
 
@@ -61,10 +51,12 @@ class Repository extends RestRepository {
       c.id,
       c.name,
       c.email,
+      c.cpf,
       c.active,
       c.departmentId,
       c.avatar,
       c.createdAt,
+      c.updatedAt,
       cdpt.name AS departmentName,
       ca.id AS addressId,
       ca.street AS addressStreet,
@@ -98,6 +90,15 @@ class Repository extends RestRepository {
       FROM ${this.entity}
       WHERE email = ${this.pool.escape(email)}
       AND id <> ${this.pool.escape(id)}
+    `
+    return this.query(sql)
+  }
+
+  async disableColaborator (id: number) {
+    const sql = `
+      UPDATE ${this.entity} c
+      SET active = 0
+      WHERE id = ${this.pool.escape(id)}
     `
     return this.query(sql)
   }
