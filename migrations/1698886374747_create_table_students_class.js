@@ -3,9 +3,11 @@ module.exports = {
     CREATE TABLE IF NOT EXISTS students_class (
       \`id\` int(11) NOT NULL AUTO_INCREMENT,
       \`code\` varchar(255) NOT NULL,
+      \`model\` varchar(255) NOT NULL,
+      \`floor\` varchar(255) NOT NULL,
+      \`studentsAmount\` varchar(255) NOT NULL,
       \`startDate\` date NOT NULL,
       \`endDate\` date NOT NULL,
-      \`studentsAmount\` date NOT NULL,
       \`createdAt\` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
       \`updatedAt\` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
       \`deletedAt\` timestamp NULL DEFAULT NULL,

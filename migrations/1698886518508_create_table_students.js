@@ -7,8 +7,6 @@ module.exports = {
       \`cpf\` varchar(255) NOT NULL,
       \`genre\` varchar(255) NOT NULL,
       \`birth\` date NOT NULL,
-      \`monthlyIncome\` varchar(255) NOT NULL,
-      \`teacherId\` int(11) NOT NULL,
       \`matterId\` int(11) NOT NULL,
       \`avatar\` text NULL DEFAULT NULL,
       \`createdAt\` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,

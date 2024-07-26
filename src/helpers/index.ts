@@ -1,4 +1,6 @@
+export { compactObject } from './compact-object'
 export { cryptPassword } from './crypt-password'
 export { getLimit } from './get-limit'
 export { getOffset } from './get-offset'
 export { getPages } from './get-pages'
+export { isEmpty } from './is-empty'

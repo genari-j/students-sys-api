@@ -1,3 +1,10 @@
+interface NewColabDepartment {
+  id?: number
+  name: string
+  active?: number
+  createdAt?: string
+}
+
 interface ColabDepartment {
   id?: number
   name?: string
@@ -7,6 +14,7 @@ interface ColabDepartment {
 
 interface ColabDepartmentsRepository {
   findAll (): Promise<ColabDepartment[]>
+  create(payload: NewColabDepartment): Promise<NewColabDepartment[]>
 }
 
 export {

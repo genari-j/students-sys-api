@@ -5,7 +5,7 @@ module.exports = {
       \`street\` varchar(255) NOT NULL,
       \`number\` varchar(255) NOT NULL,
       \`neighborhood\` varchar(255) NOT NULL,
-      \`complement\` varchar(255) NOT NULL,
+      \`complement\` varchar(255) NULL DEFAULT NULL,
       \`city\` varchar(255) NOT NULL,
       \`state\` varchar(255) NOT NULL,
       \`cep\` varchar(255) NOT NULL,
